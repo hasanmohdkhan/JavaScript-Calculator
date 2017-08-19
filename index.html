@@ -9,55 +9,78 @@
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css'>
 
+    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src="js/index.js"></script>
   
 </head>
 
 <body>
- <div class="w3-container">
-   <div class="w3-card">
-      <h3 id="output">Hasan</h3>
-     
-     </div>
-     <br>
-     <div class="w3-card">
+<div class="text-center">
+<!-- Introduction  -->
+    <h1 id="desc">JavaScript Calculator</h1>
+    <h2 id="author">By: Hasan Mohd. Khan</h2>
+
+    <!-- Introduction  -->
+</div>
+<!-- Area For Output to be shown -->
+<div id="Output">
+    <span id="steps"> 0 </span>   <!-- TODO Change id -->
+
+
+</div>
+
+<hr/>
+
+<!-- // Area For Output to be shown -->
+
+
+
+
+
+     <div class="w3-card" id="numberKeys">
       
     <div>
-    <button class="w3-btn w3-red button">CE</button>
+
+        <button class="w3-btn w3-blue w3-ripple button" id="deleteAll">AC</button>
+        <button class="w3-btn w3-red w3-ripple button " id="backOne">CE</button>
         
-    <button class="w3-btn w3-black w3-ripple button">AC</button>     
+
     </div>     
     <div > 
         <br>
     <!--button for digits-->    
-    <button class="w3-btn w3-blue w3-ripple button">7</button>
-    <button class="w3-btn w3-blue w3-ripple button">8</button>
-    <button class="w3-btn w3-blue w3-ripple button">9</button>
-    <button class="w3-btn w3-pink w3-ripple button">/</button>
+    <button class="w3-btn w3-blue w3-ripple button" id="7">7</button>
+    <button class="w3-btn w3-blue w3-ripple button" id="8">8</button>
+    <button class="w3-btn w3-blue w3-ripple button" id="9">9</button>
+    <button class="w3-btn w3-pink w3-ripple button" id="/">/</button>
     </div>
           <br>
     <div> 
     <!--button for digits-->    
-    <button class="w3-btn w3-blue w3-ripple button">4</button>
-    <button class="w3-btn w3-blue w3-ripple button">5</button>
-    <button class="w3-btn w3-blue w3-ripple button">6</button>
-    <button class="w3-btn w3-pink w3-ripple button">x</button>
+    <button class="w3-btn w3-blue w3-ripple button" id="4">4</button>
+    <button class="w3-btn w3-blue w3-ripple button" id="5">5</button>
+    <button class="w3-btn w3-blue w3-ripple button" id="6">6</button>
+    <button class="w3-btn w3-pink w3-ripple button" id="*">x</button>
     </div>
           <br>
     <div> 
     <!--button for digits-->    
-    <button class="w3-btn w3-blue w3-ripple button">1</button>
-    <button class="w3-btn w3-blue w3-ripple button">2</button>
-    <button class="w3-btn w3-blue w3-ripple button">3</button>
-    <button class="w3-btn w3-pink w3-ripple button">-</button>
+    <button class="w3-btn w3-blue w3-ripple button" id="1">1</button>
+    <button class="w3-btn w3-blue w3-ripple button" id="2">2</button>
+    <button class="w3-btn w3-blue w3-ripple button" id="3">3</button>
+    <button class="w3-btn w3-pink w3-ripple button" id="-">-</button>
     </div>
           <br>
     <div> 
     <!--button for digits-->    
-    <button class="w3-btn w3-blue w3-ripple button">0</button>
-    <button class="w3-btn w3-pink w3-ripple button">.</button>
-    <button class="w3-btn w3-pink w3-ripple button">+</button>
-    <button class="w3-btn w3-pink w3-ripple button">=</button>
+    <button class="w3-btn w3-blue w3-ripple button" id="0">0</button>
+    <button class="w3-btn w3-pink w3-ripple button" id=".">.</button>
+    <button class="w3-btn w3-pink w3-ripple button" id="+">+</button>
+    <button class="w3-btn w3-pink w3-ripple button" id="total">=</button>
     </div>     
          
          
@@ -67,7 +90,7 @@
          
          
          
-         
+
          
          
      
